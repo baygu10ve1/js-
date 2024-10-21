@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.badge {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.low {
+    background-color: #90ee90; /* Светло-зеленый */
+}
+
+.medium {
+    background-color: #ffd700; /* Золотистый */
+}
+
+.high {
+    background-color: #ff7f7f; /* Светло-красный */
+}

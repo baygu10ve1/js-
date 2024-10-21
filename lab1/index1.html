@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Modifier Example</title>
+  <style>
+    #target-element {
+      width: 200px;
+      height: 200px;
+      background-color: green;
+      border-radius: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="target-element"></div>
+  <button id="modify-button">Modify CSS</button>
+
+  <script>
+    const targetElement = document.getElementById('target-element');
+    const modifyButton = document.getElementById('modify-button');
+
+
+    let originalWidth, originalHeight, originalBorderRadius, originalBackgroundColor;
+
+    modifyButton.addEventListener('click', function() {
+      
+      if (targetElement.style.width === '') {
+        
+        originalWidth = targetElement.style.width;
+        originalHeight = targetElement.style.height;
+        originalBorderRadius = targetElement.style.borderRadius;
+        originalBackgroundColor = targetElement.style.backgroundColor;
+      
+        targetElement.style.width = '900px';
+        targetElement.style.height = '210px';
+        targetElement.style.borderRadius = '5%';
+        targetElement.style.backgroundColor = 'blue';
+      } else {
+        
+        targetElement.style.width = originalWidth;
+        targetElement.style.height = originalHeight;
+        targetElement.style.borderRadius = originalBorderRadius;
+        targetElement.style.backgroundColor = originalBackgroundColor;
+      }
+    });
+  </script>
+</body>
+</html>

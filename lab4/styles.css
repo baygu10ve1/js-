@@ -1,0 +1,10 @@
+body {
+    padding: 20px;
+}
+
+.table-card {
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
